@@ -6,9 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML + CSS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   </head>
   <body>
-    <div class="flex content-center gap-6 p-8">
+    <!-- Header -->
+    <div class="flex items-center content-center gap-6 p-8">
+      <!-- Logo -->
+      <a class="flex w-10 justify-center" href="#">
+        <i data-lucide="figma"></i>
+      </a>
+      <!-- Navigation Pill List -->
       <div class="flex flex-auto justify-end gap-2">
         <a class="justify-center rounded-lg items-center p-2 bg-gray-100"
           >Products</a
@@ -20,6 +27,7 @@
         <a class="justify-center items-center p-2">Contact</a>
         <a class="justify-center items-center p-2">Link</a>
       </div>
+      <!-- Header Auth -->
       <div class="flex w-44 gap-3 bg-gray-100">
         <a
           class="p-2 flex-auto text-center bg-gray-200 rounded-lg border border-gray-600"
@@ -33,11 +41,24 @@
         </a>
       </div>
     </div>
+    <!-- Hero Section -->
     <div
       class="flex flex-col justify-center items-center px-16 py-40 gap-2 bg-gray-100"
     >
       <h1 class="text-7xl font-bold">Title</h1>
       <p class="text-3xl text-gray-600">Subtitle</p>
     </div>
+    <!-- Cards Section -->
+    <div class="flex p-16 flex-col items-flex-start gap-12">
+      <!-- Text Content Heading -->
+      <div class="flex flex-col items-flex-start gap-2">
+        <h2 class="text-2xl font-bold">Heading</h2>
+        <p class="text-xl text-gray-500">Subheading</p>
+      </div>
+    </div>
+    <script>
+      // Initialize all Lucide icons on the page
+      lucide.createIcons();
+    </script>
   </body>
 </html>
